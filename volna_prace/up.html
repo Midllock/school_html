@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paths on 3x3 Map</title>
+</head>
+<body>
+    <svg id="svgCanvas" width="300" height="300">
+        <!-- Vykreslení mřížky -->
+        <line x1="0" y1="100" x2="300" y2="100" stroke="black" stroke-width="1"/>
+        <line x1="0" y1="200" x2="300" y2="200" stroke="black" stroke-width="1"/>
+        <line x1="100" y1="0" x2="100" y2="300" stroke="black" stroke-width="1"/>
+        <line x1="200" y1="0" x2="200" y2="300" stroke="black" stroke-width="1"/>
+    </svg>
+
+    <script>
+        // Funkce pro vykreslení cesty
+        function drawPath(svg, path) {
+            let pathString = "M";
+            for (let i = 0; i < path.length; i++) {
+                const point = path[i];
+                const x = (point[1] + 0.5) * 100;
+                const y = (point[0] + 0.5) * 100;
+                pathString += `${x},${y} `;
+            }
+            const start = (path[0][1] + 0.5) * 100 + "," + (path[0][0] + 0.5) * 100 + " ";
+            const end = "200,200";
+            pathString = start + pathString + end;
+            
+            const pathElement = document.createElementNS("http://www.w3.org/2000/svg", "path");
+            pathElement.setAttribute("d", pathString);
+            pathElement.setAttribute("fill", "none");
+            pathElement.setAttribute("stroke", "blue");
+            pathElement.setAttribute("stroke-width", "2");
+            svg.appendChild(pathElement);
+            
+            // Konvertování SVG na obrázek JPG
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            const img = new Image();
+            img.onload = function() {
+                ctx.drawImage(img, 0, 0);
+                const jpgData = canvas.toDataURL("image/jpeg");
+                // Odkaz ke stažení JPG
+                const link = document.createElement("a");
+                link.href = jpgData;
+                link.download = "path.jpg";
+                link.innerHTML = "Stáhnout obrázek JPG";
+                document.body.appendChild(link);
+            }
+            img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgData);
+        }
+
+        // Funkce pro nalezení všech možných cest
+        function findPaths(svg) {
+            const allPaths = [];
+
+            // Počáteční bod (horní pravý roh)
+            const start = [2, 2];
+            // Koncový bod (dolní levý roh)
+            const end = [0, 0];
+            // Všechny body kromě počátečního a koncového
+            const allPoints = [[0, 1], [1, 0], [1, 1], [1, 2], [2, 1]];
+
+            // Funkce pro rekurzivní nalezení cest
+            function recursivePath(currentPath, remainingPoints) {
+                if (remainingPoints.length === 0) {
+                    allPaths.push(currentPath);
+                    return;
+                }
+
+                const lastPoint = currentPath[currentPath.length - 1];
+
+                for (const point of remainingPoints) {
+                    if (point[0] === lastPoint[0] || point[1] === lastPoint[1] || Math.abs(point[0] - lastPoint[0]) === Math.abs(point[1] - lastPoint[1])) {
+                        recursivePath([...currentPath, point], remainingPoints.filter(p => p !== point));
+                    }
+                }
+            }
+
+            recursivePath([start], allPoints);
+            allPaths.forEach(path => drawPath(svg, path));
+        }
+
+        // Volání funkce pro nalezení a vykreslení cest
+        findPaths(document.getElementById("svgCanvas"));
+    </script>
+</body>
+</html>
+
