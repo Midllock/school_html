@@ -1,0 +1,22 @@
+body,html{
+    background-color: orange;
+}
+
+.nadpis{
+    position: absolute;
+    right: 50%;
+}
+
+.obraz{
+    position: absolute;
+    left: 40%;
+    width: 400px;
+    height: 300px;
+    top: 40%;
+}
+.text{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-size: 28px;
+}
