@@ -1,0 +1,57 @@
+html, body{
+    background-color : rgb(192, 34, 192);
+    color: rgb(208, 204, 204);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}   
+
+h1{
+    position: relative;
+    text-align: center;
+    top: 16rem;
+}
+
+form{
+    text-align: center;
+    background: 2rem;
+    background-color: rgb(76, 77, 78);
+    padding: 3rem;
+    width: 300px;
+    height: 350px;
+    border-radius: 4rem;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.5);
+}
+form div{
+    margin-top: 10rem;
+    
+}
+form input{
+    margin-bottom: 1rem;
+    width: 16rem;
+}
+form label{
+    position: absolute;
+    left: 39rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+
+}
+form img{
+    position: absolute; 
+    left: 42rem;
+    top: 10rem;
+    width: 140px;
+}   
+form button{
+    margin-top: 1rem;
+    background-color: rgb(192, 34, 192);
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border-width: 0.1rem;
+    border: solid black;
+      
+}
+

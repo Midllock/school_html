@@ -1,0 +1,40 @@
+html, body {
+    background-color: black;
+    color: black;
+    font-size: 20px;
+}
+ 
+.ctverce {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    column-gap: 10PX;
+}
+.card {
+    background-color:rgb(255, 255, 255);
+    color:black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.card img {
+    border-radius: 10px;
+    width: 300px;
+}
+.card a {
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 3.2rem;
+    border-radius: 3rem;
+    display: block;
+}
+.card p {
+    text-align: center;
+}
