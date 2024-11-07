@@ -1,0 +1,30 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+.container{
+    display: grid;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.red{
+    background-color: red;
+    grid-column-start: 1 ;
+    grid-column-end: 6;
+}
+.green{
+    background-color: green;
+    grid-area: 2/2/6/6; /* grid-row-start: 2; grid-column-start: 2; grid-row-end: 6; grid-column-end: 6; */
+}
+.blue{
+    background-color: blue;
+    grid-row-start: 2;
+    grid-row-end: 6;
+
+}

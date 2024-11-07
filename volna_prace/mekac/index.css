@@ -1,0 +1,34 @@
+
+.app{
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(5,1fr);
+}
+
+.menu{
+    background-color: rgb(162, 16, 16);
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    grid-column: 1/7;
+}
+
+
+.left{
+    background-color: rgb(255, 255, 255);
+    grid-column: 1/2;
+    grid-row:2/5
+    
+}
+
+.down{
+    background-color: orange;
+    grid-column: 1/6;
+    grid-row: 5/6;
+}
+.button{
+    border: none;
+}
