@@ -1,4 +1,7 @@
-
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px; ;
+}
 .app{
     display: grid;
     margin: auto;
@@ -20,8 +23,82 @@
 .left{
     background-color: rgb(255, 255, 255);
     grid-column: 1/2;
-    grid-row:2/5
+    grid-row:2/5;
+    display: grid;
+}
+.photo{
+    padding: 0.3rem;
+    margin-left:3rem ;
+    margin-top: 1.2rem;
+    border-top: 0px solid rgb(246, 243, 243);
+    border-left: 0px solid rgb(250, 248, 248);
+    border-radius: 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 1.5);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 1.5);
+}
+.mec{
+    border: 2px solid rgb(99, 13, 13);
+    margin-top: 3.8rem;
+    margin-right: 4rem;
+    padding: 0.6rem;
+    padding-bottom: 30px ;
+    border-radius: 20px;
     
+}
+.p1{
+    position: relative;
+    top: -6.5rem;
+    left: 2.5rem;
+}
+.p0{
+    position: relative;
+    top: -20rem;
+    left: 2.5rem;
+}
+.p2{
+    position: relative;
+    top: -25.3rem;
+    left: 18rem;
+}
+.p3{
+    position: relative;
+    top: -12rem;
+    left: 18rem;
+}
+.p4{
+    position: relative;
+    top: -30.7rem;
+    left: 33rem;
+}
+.p5{
+    position: relative;
+    top: -17.2rem;
+    left: 33rem;
+}
+.p6{
+    position: relative;
+    top: -36rem;
+    left: 48rem;
+}
+.p7{
+    position: relative;
+    top: -22.8rem;
+    left: 48rem;
+}
+.p8{
+    position: relative;
+    top: -41.5rem;
+    left: 63rem;
+}
+.p9{
+    position: relative;
+    top: -28rem;
+    left: 63rem;
+}
+.main_menu{
+    background-color: rgb(255, 255, 255);
+    grid-column: 2/6;
+    grid-row: 2/5;
 }
 
 .down{
@@ -29,6 +106,23 @@
     grid-column: 1/6;
     grid-row: 5/6;
 }
-.button{
-    border: none;
+button{
+    position: relative;
+    left: 40rem;
+    top: 2rem;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+.cancel{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+    border-color: rgb(255, 40, 7);
+    
+}
+.add{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border-color: rgb(4, 255, 25);
+    background-color: rgb(4, 255, 25);
 }
