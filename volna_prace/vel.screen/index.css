@@ -1,0 +1,43 @@
+html{
+    background-color: #222222;
+}
+.container{
+    background-color: purple;
+    width: 100%;
+    margin: auto;   
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.text{
+    width: 50%;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.image{
+    width: 50%;
+    background-color: red;
+    height: 500px;
+}
+
+@media only screen and (max-width:768px){
+    html{
+        font-size: 20px;
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+    .text, .image{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .image{
+        background-color: green;
+    }
+}
+

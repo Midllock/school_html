@@ -12,7 +12,6 @@ body{
 }
 
 .menu{
-    background-color: rgb(162, 16, 16);
     background-image: url(logo.png);
     background-repeat: no-repeat;
     background-size: cover; 
