@@ -1,0 +1,59 @@
+.header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    left: 0;
+    top:0;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+}
+h1{
+    position: absolute;
+    left: 45%;
+    top: 25%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    position: absolute;
+    height: 80px;
+    width: 180px;
+    top:1%;
+    right: 1%;
+}
+.info{
+    width: 53%;
+    height: 22%;
+    padding: 1%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    left: 25%;
+    text-align: center;
+    font-size: 1.5rem;
+    top:10%;
+}
+.pole {
+    display: flex;
+    flex-direction: row;    
+    justify-content: center;
+    position: absolute;
+    left: 12%;
+    top: 40%;
+    column-gap: 10PX;
+}
+.card{
+    background-color:rgb(182, 0, 0);
+    color:black;
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+}

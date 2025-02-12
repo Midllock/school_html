@@ -3,13 +3,11 @@ html, body{
     color: rgb(208, 204, 204);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }   
-
 h1{
     position: relative;
     text-align: center;
     top: 16rem;
 }
-
 form{
     text-align: center;
     background: 2rem;
@@ -25,18 +23,20 @@ form{
 }
 form div{
     margin-top: 10rem;
-    
 }
 form input{
     margin-bottom: 1rem;
     width: 16rem;
+    background-color: rgb(76, 77, 78);
+    border-radius: 12px;
 }
 form label{
     position: absolute;
     left: 39rem;
     margin-bottom: 1rem;
     font-size: 18px;
-
+    justify-content: center;
+    
 }
 form img{
     position: absolute; 
@@ -52,6 +52,7 @@ form button{
     border-radius: 2rem;
     border-width: 0.1rem;
     border: solid black;
-      
 }
-
+.text{
+    color: rgb(192, 34, 192);
+}
