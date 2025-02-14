@@ -10,7 +10,7 @@
 }
 h1{
     position: absolute;
-    left: 45%;
+    left: 43%;
     top: 25%;
     margin: auto;
     justify-content: center;
@@ -35,25 +35,159 @@ img{
     margin: auto;
     left: 25%;
     text-align: center;
+    font-size: 1.1rem;
+    top:15%;
+}
+.pole_header{
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    top: 48%;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    border-radius: 15px;
     font-size: 1.5rem;
-    top:10%;
+    background-color: rgb(66, 66, 66);
 }
 .pole {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    top: 48%;
+    column-gap: 10PX;
+}
+.card{
+    background-color:rgb(66, 66, 66);
+    color: white;
+    width: 250px;
+    height: 80px;
+    margin: 50px;
+    padding: 5px;
+    padding-top:25px;
+    border-radius: 10px;
+    text-align: center;
+}
+.pole_header1{
+    position: absolute;
+    margin: auto;
+    left: 35%;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: rgb(66, 66, 66);
+}
+.pole1 {
     display: flex;
     flex-direction: row;    
     justify-content: center;
     position: absolute;
-    left: 12%;
-    top: 40%;
+    left: 15%;
+    top: 80%;
     column-gap: 10PX;
 }
-.card{
-    background-color:rgb(182, 0, 0);
-    color:black;
-    width: 400px;
-    height: 500px;
+.nadpis{
+    font-size: 1.2rem;}
+.card1{
+    background-color:rgb(66, 66, 66);
+    color: white;
+    width: 250px;
+    height: 180px;
     margin: 50px;
     padding: 5px;
     border-radius: 10px;
     text-align: center;
+}
+.info_header1{
+    width: 16%;
+    height: 5%;
+    padding-top: 0.9%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    left: 24%;
+    text-align: center;
+    font-size: 1.1rem;
+    top:122%;
+}
+.info1{
+    width: 35%;
+    height:13%;
+    padding: 1%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    left: 12%;
+    text-align: center;
+    font-size: 1.1rem;
+    top:130%;
+}
+
+.info_header2{
+    width: 16%;
+    height: 5%;
+    padding-top: 0.9%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    right: 21%;
+    text-align: center;
+    font-size: 1.1rem;
+    top:122%;
+}
+.info2{
+    width: 32%;
+    height: 6%;
+    padding: 1%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    right: 12%;
+    text-align: center;
+    font-size: 1.1rem;
+    top:130%;
+}
+.info_header3{
+    width: 22%;
+    height: 7%;
+    padding-top: 0.9%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    left: 21%;
+    text-align: center;
+    font-size: 1.1rem;
+    top:152%;
+}
+.info3{
+    width: 25%;
+    height:18%;
+    padding: 1%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    left: 18.5%;
+    text-align: center;
+    font-size: 1.1rem;
+    top:163%;
 }
