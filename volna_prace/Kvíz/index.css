@@ -1,0 +1,14 @@
+body{
+    background-color: purple;
+}
+.question{
+    background-color: white;
+    width: 15%;
+    height: 7rem;
+    border-radius: 15px;
+}
+.t1{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
