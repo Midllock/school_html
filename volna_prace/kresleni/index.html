@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>2D Canvas</title>
+    <style>
+      body {
+        background: black;
+      }
+      canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="540" height="540"></canvas>
+    <script>
+      // Získání referenci na canvas
+      const canvas = document.getElementById("canvas");
+      const ctx = canvas.getContext("2d");
+
+      for (let i = 0; i < 8; i++) {
+        for (let j = 0; j < 8; j++) {
+          ctx.beginPath();
+          ctx.rect(j * 90, i * 90, 90, 90);
+          ctx.fillStyle = (i + j) % 2 ? "white" : "black";
+          ctx.fill();
+        }
+      }
+    </script>
+  </body>
+</html>

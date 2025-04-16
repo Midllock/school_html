@@ -4,6 +4,9 @@ body{
 }
 button{
     background-color: rgb(23, 111, 5);
+    position: absolute;
+    left: 8%;
+    top:80%;
     border-radius: 10px;
     border:none;
     padding: 1em;
@@ -12,4 +15,16 @@ button{
 }
 button:hover{
     background-color: rgb(24, 180, 3);
+    position: absolute;
+}
+div{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    width: 100vh;
+    margin: 0;
+}
+h1{
+    color:brown;
+    font-size: 40px;
 }

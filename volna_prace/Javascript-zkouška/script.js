@@ -7,7 +7,7 @@ btn.addEventListener("click",function(){
     let r = Math.random() * 255;
     let b = Math.random() * 255;
     let g = Math.random() * 255;
-    h1.style.color= rgb (, 111, 5);
+    h1.style.color= rgb (5, 111, 5);
     h1.style.fontSize="3rem";
     h1.style.transition="all 0.1s ease-in-out";
 });
