@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif; 
+}
+  
+.kontainer {
+    max-width: 600px; 
+    margin-top: 50px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray; 
+  }
+  
+h1 {
+    color: rgb(42, 42, 85);
+}
+  
+.introduction {
+    font-size: large; 
+}
+
+button{
+    background-color: rgb(56, 56, 116);
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(38, 38, 80);
+    cursor:pointer;
+}   
