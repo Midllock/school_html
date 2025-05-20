@@ -1,0 +1,1 @@
+Udělaní kart, ve stylu Nike, pomocí gridu a odkazu na stránky.

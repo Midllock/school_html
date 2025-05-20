@@ -1,0 +1,1 @@
+Udělání mekáč tabule pro objednání, za pomocí gridu

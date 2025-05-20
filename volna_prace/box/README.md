@@ -1,0 +1,1 @@
+První začátky, ve škole, inport fotky, nastvaní velikosti, kousek textu.

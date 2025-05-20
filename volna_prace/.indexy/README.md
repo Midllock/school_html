@@ -1,0 +1,1 @@
+Hraní s Html a css potomky, Hover, Display, Important.

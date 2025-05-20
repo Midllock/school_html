@@ -1,0 +1,1 @@
+Udělaní registračního webu. Zadaní požadavků a hesla (bez databáze).

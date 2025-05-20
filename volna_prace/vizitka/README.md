@@ -1,0 +1,1 @@
+Udělání viziky s hovrem po najetí mišky.

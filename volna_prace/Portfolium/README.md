@@ -1,0 +1,1 @@
+Udělaní základního portfolia na mojí osobnost.

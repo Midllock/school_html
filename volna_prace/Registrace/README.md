@@ -1,0 +1,1 @@
+Udělaní reg formůláře ale staticky.

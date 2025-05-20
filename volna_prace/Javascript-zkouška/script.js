@@ -1,13 +1,31 @@
-let n=0;
+
+let clickCount = 0;
 const btn = document.querySelector("button");
-const h1=document.querySelector("h1");
-btn.addEventListener("click",function(){
-    n++;
-    btn.innerHTML= (n);
-    let r = Math.random() * 255;
-    let b = Math.random() * 255;
-    let g = Math.random() * 255;
-    h1.style.color= rgb (5, 111, 5);
-    h1.style.fontSize="3rem";
-    h1.style.transition="all 0.1s ease-in-out";
-});
+const headingElement = document.querySelector("h1");
+if (btn && headingElement) {
+    // Nastavíme transition jednou, aby se aplikovala na všechny změny
+    headingElement.style.transition = "all 0.2s ease-in-out"; // Mírně delší pro lepší viditelnost
+
+    btn.addEventListener("click", function() {
+        clickCount++;
+        btn.innerHTML = `Počet kliknutí: ${clickCount}`; // Popisnější text tlačítka
+
+        // Generování náhodných barev a jejich použití
+        // Použijeme Math.floor pro celá čísla a násobíme 256 pro rozsah 0-255
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+
+        headingElement.style.color = `rgb(${r}, ${g}, ${b})`;
+        headingElement.style.fontSize = "3rem";
+
+        // Přechod je již nastaven, takže ho zde nemusíme znovu nastavovat
+    });
+} else {
+    if (!btn) {
+        console.error("Chyba: Tlačítko nebylo na stránce nalezeno.");
+    }
+    if (!headingElement) {
+        console.error("Chyba: Nadpis <h1> nebyl na stránce nalezen.");
+    }
+}

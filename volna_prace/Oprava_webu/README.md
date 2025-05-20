@@ -1,0 +1,1 @@
+Opravení webu pro změnu po kliku.

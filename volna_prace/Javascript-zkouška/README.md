@@ -1,0 +1,1 @@
+Začátky webového javascriptu, podle zmáčknutí tlačítka se zmení počet o +1 a taky se na random zmení barva H1

@@ -1,0 +1,1 @@
+Udělaní dvou obdělníku podle velikosti obrazovky.
