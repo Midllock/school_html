@@ -30,21 +30,19 @@ img{
     background-color: rgb(66, 66, 66);
     color: white;
     border-radius: 25px;
-    position: absolute;
     justify-content: center;
     margin: auto;
-    left: 25%;
+    margin-top: 8%;
     text-align: center;
     font-size: 1.1rem;
-    top:15%;
 }
 .pole_header{
-    position: absolute;
     margin: auto;
-    left: 50%;
-    top: 48%;
+    width: 3.5%;
+    height: 5%;
+    margin-top: 1%;
     color: rgb(255, 255, 255);
-    padding: 6px;
+    padding: 12px;
     border-radius: 15px;
     font-size: 1.5rem;
     background-color: rgb(66, 66, 66);
@@ -53,71 +51,68 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: absolute;
-    left: 15%;
-    top: 48%;
-    column-gap: 10PX;
+    margin-top: 1%;
+    column-gap: 20px;
 }
 .card{
     background-color:rgb(66, 66, 66);
     color: white;
     width: 250px;
     height: 80px;
-    margin: 50px;
     padding: 5px;
-    padding-top:25px;
+    padding-top: 10px;
     border-radius: 10px;
     text-align: center;
 }
 .pole_header1{
-    position: absolute;
     margin: auto;
-    left: 35%;
+    width: 17%;
+    height: 22px;
+    margin-top: 2%;
+    text-align: center;
     color: rgb(255, 255, 255);
-    padding: 6px;
+    padding: 15px;
     border-radius: 15px;
     font-size: 1.5rem;
     background-color: rgb(66, 66, 66);
 }
-.pole1 {
+.cards{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     justify-content: center;
-    position: absolute;
-    left: 15%;
-    top: 80%;
-    column-gap: 10PX;
+    margin-top: 1%;
+    column-gap: 20px;
 }
+
 .nadpis{
     font-size: 1.2rem;}
 .card1{
     background-color:rgb(66, 66, 66);
     color: white;
-    width: 250px;
-    height: 180px;
-    margin: 50px;
+    width: 350px;
+    height: 170px;
     padding: 5px;
+    padding-top: 10px;
     border-radius: 10px;
     text-align: center;
 }
 .info_header1{
-    width: 16%;
-    height: 5%;
-    padding-top: 0.9%;
+    width: 12%;
+    height: 20px;
+    padding: 1%;
+    text-align: center;
     background-color: rgb(66, 66, 66);
     color: white;
     border-radius: 25px;
     position: absolute;
-    justify-content: center;
     margin: auto;
     left: 24%;
-    text-align: center;
     font-size: 1.1rem;
-    top:122%;
+    top:80%;
 }
 .info1{
-    width: 35%;
-    height:13%;
+    width: 26%;
+    height:10%;
     padding: 1%;
     background-color: rgb(66, 66, 66);
     color: white;
@@ -125,30 +120,15 @@ img{
     position: absolute;
     justify-content: center;
     margin: auto;
-    left: 12%;
+    left: 17%;
     text-align: center;
     font-size: 1.1rem;
-    top:130%;
+    top:88%;
 }
 
 .info_header2{
-    width: 16%;
-    height: 5%;
-    padding-top: 0.9%;
-    background-color: rgb(66, 66, 66);
-    color: white;
-    border-radius: 25px;
-    position: absolute;
-    justify-content: center;
-    margin: auto;
-    right: 21%;
-    text-align: center;
-    font-size: 1.1rem;
-    top:122%;
-}
-.info2{
-    width: 32%;
-    height: 6%;
+    width: 10%;
+    height: 20px;
     padding: 1%;
     background-color: rgb(66, 66, 66);
     color: white;
@@ -156,25 +136,38 @@ img{
     position: absolute;
     justify-content: center;
     margin: auto;
-    right: 12%;
+    right: 24%;
     text-align: center;
     font-size: 1.1rem;
-    top:130%;
+    top:80%;
 }
-.info_header3{
-    width: 22%;
-    height: 7%;
-    padding-top: 0.9%;
+.info2{
+    width: 28%;
+    height: 4%;
+    padding: 1%;
     background-color: rgb(66, 66, 66);
     color: white;
     border-radius: 25px;
     position: absolute;
     justify-content: center;
     margin: auto;
-    left: 21%;
+    right: 15%;
     text-align: center;
     font-size: 1.1rem;
-    top:152%;
+    top:88%;
+}
+.info_header3{
+    width: 17%;
+    height: 55px;
+    padding: 1%;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    border-radius: 25px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 1.5rem;
 }
 .info3{
     width: 25%;
@@ -183,11 +176,11 @@ img{
     background-color: rgb(66, 66, 66);
     color: white;
     border-radius: 25px;
-    position: absolute;
     justify-content: center;
     margin: auto;
-    left: 18.5%;
+    margin-top: 1%;
+    left: 42%;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     top:163%;
 }
