@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responzivní Menu</title>
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
 </head>
 <body>
     <header class="header">
-        <img class="hamburger"src="burger.svg">
-        <p class="Logo_id">Logo</p>
-        <div class="menu">
-            <img class="Logo_ig" src="logo_ig.svg">
-            <p class="text">map</p>
+        <div class="logo-container">
+            <!-- Můžeš sem dát hlavní logo stránky, pokud máš -->
+            <!-- <img src="path/to/main-logo.png" alt="Hlavní Logo" class="main-logo"> -->
+            <span class="site-title">Moje Stránka</span>
         </div>
+
+        <nav class="navigation-menu">
+            <a href="#" class="nav-item">
+                <!-- Nahraď 'placeholder-map.png' skutečnou ikonou map -->
+                <img src="map.svg" alt="Mapy" class="nav-icon maps-icon">
+                <span class="nav-text">Mapy</span>
+            </a>
+            <a href="#" class="nav-item">
+                <!-- Nahraď 'placeholder-ig.png' skutečnou ikonou Instagramu -->
+                <img src="logo_ig.svg" alt="Instagram" class="nav-icon logo-ig">
+                <span class="nav-text">Instagram</span>
+            </a>
+        </nav>
+
+        <button class="hamburger" aria-label="Otevřít menu" aria-expanded="false">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
     </header>
-    <script scr="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
