@@ -31,8 +31,7 @@ form input{
     border-radius: 12px;
 }
 form label{
-    position: absolute;
-    left: 39rem;
+    padding-right: 60%;
     margin-bottom: 1rem;
     font-size: 18px;
     justify-content: center;
@@ -40,7 +39,7 @@ form label{
 }
 form img{
     position: absolute; 
-    left: 42rem;
+    left: 45.5%;
     top: 10rem;
     width: 140px;
 }   
