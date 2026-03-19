@@ -1,0 +1,84 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f8;
+}
+
+.game-container {
+    display: flex; /* Menu vlevo, hlavní obsah vpravo */
+    gap: 40px;
+    margin-top: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* e. Vertikální menu */
+.side-menu {
+    width: 200px;
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li { margin-bottom: 15px; }
+
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.side-menu a:hover { background: #34495e; }
+
+/* b. Herní pole 10x10 */
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    background-color: #333;
+    padding: 5px;
+    border: 5px solid #2c3e50;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #add8e6; /* Voda */
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.hit { background-color: #e74c3c; color: white; } /* Potopená loď */
+.cell.miss { background-color: #bdc3c7; color: #7f8c8d; } /* Minutí */
+.cell.hidden:hover { background-color: #87ceeb; }
+
+/* c. Lišta s počtem tahů */
+.game-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

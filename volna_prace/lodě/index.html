@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hra Lodě PvE - klasická námořní bitva proti počítači. Potopte parníky, jachty a pramice!">
+    <meta name="keywords" content="hry, lodě, battleship, PvE, prohlížečová hra">
+    <meta name="author" content="Vaše Jméno">
+    <title>Lodě PvE | Námořní bitva</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lodě PvE</h1>
+    </header>
+
+    <div class="game-container">
+        <nav class="side-menu" aria-label="Hlavní menu hry">
+            <ul>
+                <li><a href="#" onclick="initGame(); return false;" title="Spustit novou hru">Nová hra</a></li>
+                <li><a href="#" title="Načíst uloženou pozici">Načíst hru</a></li>
+                <li><a href="#" title="Zobrazit tabulku vítězů">Výsledky</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="board-section">
+                <div id="game-board" class="board" role="grid" aria-label="Herní pole 10x10">
+                    <button class="cell hit" aria-label="Zásah na A1">X</button>
+                    <button class="cell hit" aria-label="Zásah na B1">X</button>
+                    
+                    <button class="cell hidden" aria-label="Pole C1 - dosud nehádané"></button>
+                    <button class="cell miss" aria-label="Minutí na D1">•</button>
+                    </div>
+            </section>
+
+            <footer class="game-stats">
+                <p>Počet tahů: <span id="turn-count">14</span></p>
+                <p>Zbývající lodě: 5</p>
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
