@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence receptů</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Evidence receptů</h1>
+        <nav>
+            <ul>
+                <li><a href="#recepty">Recepty</a></li>
+                <li><a href="#pridat">Přidat recept</a></li>
+                <li><a href="#statistiky">Statistiky</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recepty">
+            <h2>Přehled receptů</h2>
+            <div class="filter-group">
+                <input type="text" id="searchInput" placeholder="Hledat recept...">
+            </div>
+            <div class="recipe-grid" id="recipeGrid">
+                <article class="recipe-card">
+                    <h3>Svíčková</h3>
+                    <p>Obtížnost:</p>
+                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    <button class="btn-ingredience">Ingredience</button>
+                </article>
+                <article class="recipe-card">
+                    <h3>Bramboračka</h3>
+                    <p>Obtížnost:</p>
+                    <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                    <button class="btn-ingredience">Ingredience</button>
+                </article>
+                <article class="recipe-card">
+                    <h3>Palačinky</h3>
+                    <p>Obtížnost:</p>
+                    <div class="progress-bar"><div class="progress" style="width: 20%;"></div></div>
+                    <button class="btn-ingredience">Ingredience</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="pridat">
+            <h2>Přidat nový recept</h2>
+            <form id="recipeForm">
+                <div class="form-group">
+                    <label for="name">Název receptu (max. 15 znaků):</label>
+                    <input type="text" id="name" maxlength="15" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Doba přípravy (min):</label>
+                    <input type="number" id="time" required>
+                </div>
+                <button type="submit" class="btn-submit">Uložit recept</button>
+            </form>
+        </section>
+
+        <section id="statistiky">
+            <h2>Statistiky</h2>
+            <p>Zde se budou zobrazovat souhrnné údaje o vaší kuchyni.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

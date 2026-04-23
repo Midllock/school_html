@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Bludiště s časomírou</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div class="controls">
+            <button id="start-btn" onclick="startGame()">Start</button>
+            <button id="restart-btn" onclick="restartGame()" disabled>Restart</button>
+        </div>
+        
+        <div id="timer-display">Čas: 0.0 s</div>
+        
+        <canvas id="mazeCanvas" width="400" height="400"></canvas>
+        
+        <div id="win-screen" class="hidden">
+            <h1>🎉 ÚŽASNÉ! 🎉</h1>
+            <p>Našel jsi cestu ven!</p>
+            <p id="final-time-text"></p>
+        </div>
+    </div>
+
+    <div id="database-container">
+        <h3>🏆 Nejlepší časy 🏆</h3>
+        <ul id="score-list">
+            </ul>
+        <button id="clear-db-btn" onclick="clearDatabase()">Vymazat databázi</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

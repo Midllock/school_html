@@ -66,7 +66,7 @@ function initGame() {
             boardElement.appendChild(cell);
         }
     }
-}
+}   b
 
 /**
  * Prochází konfiguraci a pokouší se náhodně umístit lodě
