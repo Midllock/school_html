@@ -1,0 +1,125 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+.slot-machine {
+    background: linear-gradient(145deg, #2c2c2c, #1e1e1e);
+    border: 4px solid #ff007f;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 25px #ff007f, inset 0 0 15px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.title {
+    font-size: 24px;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    margin-bottom: 25px;
+}
+
+.reels-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #000;
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+.reel {
+    background-color: #fff;
+    width: 80px;
+    height: 100px; /* Výška jednoho zobrazeného symbolu */
+    overflow: hidden; /* Vidíme jen jeden symbol */
+    border-radius: 8px;
+    border: 2px solid #555;
+    position: relative;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.reel-slots {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slot {
+    height: 100px; /* Musí se shodovat s výškou .reel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+/* CSS Animace pro rotaci - posuneme o 10 symbolů nahoru (10 * 100px) */
+@keyframes roll-spin {
+    0% { transform: translateY(0); }
+    /* Přidáme blur na začátku pro efekt rychlosti */
+    0% { filter: blur(0px); transform: translateY(0); }
+    10% { filter: blur(4px); }
+    90% { filter: blur(4px); }
+    /* Na konci bez bluru a s malým "zacuknutím" zpět */
+    100% { filter: blur(0px); transform: translateY(-1000px); } 
+}
+
+/* Třída pro spuštění animace, kterou budeme přidávat pomocí JS.
+   cubic-bezier na konci vytvoří efekt "usazení" válce. */
+.spinning {
+    animation-name: roll-spin;
+    animation-timing-function: cubic-bezier(0.3, 0, 0.2, 1);
+    animation-fill-mode: forwards; /* Zůstane na konci animace */
+}
+
+/* Specifická délka animace pro každý válec (pro postupné zastavení) */
+#reel1Slots.spinning { animation-duration: 2s; }
+#reel2Slots.spinning { animation-duration: 2.5s; }
+#reel3Slots.spinning { animation-duration: 3s; }
+
+button {
+    background: linear-gradient(to bottom, #ff007f, #b30059);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 0, 127, 0.4);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff007f;
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 24px;
+    color: #bbb;
+}
+
+.win { color: #00ff00; text-shadow: 0 0 10px #00ff00; }
+.lose { color: #ff3333; }

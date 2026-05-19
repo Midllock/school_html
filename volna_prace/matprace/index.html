@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Výherní Automat v2</title>
     <link rel="stylesheet" href="index.css">
-    <title>Automat</title>
 </head>
 <body>
-    
+
+    <div class="slot-machine">
+        <h1 class="title">🎰 ŠŤASTNÝ AUTOMAT 🎰</h1>
+        
+        <div class="reels-container">
+            <div class="reel">
+                <div class="reel-slots" id="reel1Slots">
+                    </div>
+            </div>
+            
+            <div class="reel">
+                <div class="reel-slots" id="reel2Slots">
+                    </div>
+            </div>
+            
+            <div class="reel">
+                <div class="reel-slots" id="reel3Slots">
+                    </div>
+            </div>
+        </div>
+
+        <button id="spin-btn">ROZTOČIT!</button>
+        <div id="message" class="message">Zkuste své štěstí!</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

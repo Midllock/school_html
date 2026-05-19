@@ -48,11 +48,12 @@ section {
 
 .recipe-card {
     background: var(--white);
+    margin-top: 4%;
     padding: 1.5rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-}
+}   
 
 .recipe-card:hover {
     transform: translateY(-5px);
